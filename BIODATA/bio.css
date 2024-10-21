@@ -1,0 +1,54 @@
+*{
+   margin: 20px;
+   
+}
+
+input[type=text],
+input[type=number],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1.5px solid #10042a;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=radio] {
+    width: 15px;
+}
+
+h1{
+    color: #412784;
+}
+
+.container {
+    color: white;
+    background: rgb(71,44,128);
+    background: linear-gradient(90deg, rgba(71,44,128,1) 0%, rgba(223,211,255,1) 100%);
+    border: 2px solid #10042a;
+    padding: 20px;
+    width: 900px;
+    border-radius: 20px;
+}
+
+
+.btn {
+    width: 100px;
+    height: 30px;
+    border: transparent;
+    margin-right: 20px;
+    color: white;
+    background: rgb(16, 4, 42);
+    background: rgb(16,4,42);
+background: linear-gradient(90deg, rgba(16,4,42,1) 0%, rgba(28,31,84,1) 35%, rgba(116,83,201,1) 100%);
+    border-radius: 20px;
+}
+
+.btn:hover{
+    color: #10042a;
+    background: white;
+    border: 2px solid #10042a;
+}

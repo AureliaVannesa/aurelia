@@ -1,0 +1,128 @@
+<html>
+
+<head>
+    <title>BIODATA</title>
+    <link rel="stylesheet" href="bio.css">
+</head>
+
+<body>
+    <script languange="JavaScript">
+    
+        function tekan(){
+            var namastr = (document.fform.nama.value);
+            var nisstr = (document.fform.nis.value);
+            var agamastr = (document.fform.agama.value);
+            var ket = (document.fform.kelamin.value);
+            var jurusanstr = (document.fform.jurusan.value);
+            var ketstr = (document.fform.ket.value);
+            var ket1 = "";
+            
+        
+            if (document.fform.status.checked == true){
+                ket1 = "aktif";
+            }else{
+                ket1 = "tidak aktif";
+            }
+        
+        
+        document.fform.onama.value = namastr;
+        document.fform.onis.value = nisstr;
+        document.fform.oagama.value = agamastr;
+        document.fform.okelamin.value = ket;
+        document.fform.ojurusan.value = jurusanstr;
+        document.fform.oket.value = ketstr;
+        document.fform.ostatus.value = ket1;
+        }
+        
+    </script>
+    <form name="fform">
+        <h1>Biodata</h1>
+        <hr>
+        <table class="container">
+            <tr>
+                <td>NIS</td>
+                <td><input type="number" id="nis" name="nis" size="38" placeholder="Masukkan NIS Anda"></td>
+            </tr>
+            <tr>
+                <td>Nama</td>
+                <td><input type="text" id="nama"  name="nama" size="38" placeholder="Masukkan Nama Anda"></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td><input type="radio" value="pria" name="kelamin">pria<input type="radio" value="wanita" name="kelamin">wanita</td>
+            </tr>
+            <tr>
+                <td>Agama</td>
+                <td><select required name="agama" id="agama" size="1">
+                        <option value="" disable selected hidden>Pilih Agama</option>
+                        <option value="Islam"> Islam</option>
+                        <option value="Katholik"> Katholik</option>
+                        <option value="Protestan"> Protestan</option>
+                        <option value="Hindu"> Hindu</option>
+                        <option value="Budha"> Budha</option>
+                        <option value="Konghucu"> Konghucu</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td>Status</td>
+                <td><input type="checkbox" value="ON" name="status"></td>
+            </tr>
+            <tr>
+                <td>Jurusan</td>
+                <td><select required name="jurusan" size="1">
+                        <option value="" disable selected hidden>Pilih Jurusan</option>
+                        <option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
+                        <option value="Teknik Komputer Dan Jaringan">Teknik Komputer Dan Jaringan</option>
+                        <option value="Animasi">Animasi</option>
+                        <option value="Desain Komunikasi Visual">Desain Komunikasi Visual</option>
+                        <option value="Desain Permodelan dan Informasi Bangunan">Desain Permodelan dan Informasi Bangunan</option>
+                        <option value="Teknik Kendaraan Ringan">Teknik Kendaraan Ringan</option>
+                        <option value="Teknik Sepeda Motor">Teknik Sepeda Motor</option>
+                        <option value="Asisten Keperawatan dan Caregiver">Asisten Keperawatan dan Caregiver</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Komentar</td>
+                <td><textarea name="ket" row="3" cols="37" placeholder="komentar anda"></textarea></td>
+            </tr>
+        </table>    
+        <br>
+
+            <input class="btn" type="button" value="kirim" onclick="tekan()">
+            <input class="btn" type="reset" value="ulang">
+            <hr>
+            
+
+            <H1>Output :</H1>
+            <table class="container">
+                <tr>
+                    <td>NIS Anda</td>
+                    <td><input type="text" size="38" name="onis"></td>
+                </tr>
+                <tr>
+                    <td>Nama Anda</td>
+                    <td><input type="text" size="38" name="onama"></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td><input type="text" size="38" name="okelamin"></td>
+                </tr>
+                <tr>
+                    <td>Agama anda</td>
+                    <td><input type="text" size="38" name="oagama"></td>
+                </tr>
+                <tr>
+                    <td>Status anda</td>
+                    <td><input type="text" size="38" name="ostatus"></td>
+                </tr>
+                <tr>
+                    <td>Jurusan anda</td>
+                    <td><input type="text" size="38" name="ojurusan"></td>
+                </tr>
+                <tr>
+                    <td>Komentar anda</td>
+                    <td><input type="text" size="38" name="oket"></td>
+                </tr>    
+     </form>
+     
